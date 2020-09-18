@@ -41,6 +41,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+
 /**
  * Fixed on 2020/9/17,which is a happy day!
  */
@@ -59,6 +60,10 @@ public class ScalableImageView extends androidx.appcompat.widget.AppCompatImageV
     int circle =0;
     float degree0=0;//按下角度
     float degree=0;//转动角度
+    public float getDegree() {
+        return degree;
+    }
+
 
     enum Mode {
         NONE, DOWN, MOVE
@@ -145,7 +150,6 @@ public class ScalableImageView extends androidx.appcompat.widget.AppCompatImageV
             case MotionEvent.ACTION_CANCEL:
                 mode = Mode.NONE;
                 break;
-
         }
 
         setImageMatrix(matrix);

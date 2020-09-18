@@ -29,6 +29,7 @@
         android:adjustViewBounds="true" />
 
     <TextView
+        android:id="@+id/speedTextView"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:text="@string/app_name"
